@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dane_ucznia.ProfilPage"
+             Title="Profil ucznia"
+             BackgroundColor="#F1F5F9">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="25"
+                             VerticalOptions="Center">
+
+            <Label x:Name="PowitanieLabel"
+                   Text="Witaj!"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#0F172A"
+                   HorizontalTextAlignment="Center" />
+
+            <Label Text="Jesteś na drugim ekranie."
+                   TextColor="#475569"
+                   HorizontalTextAlignment="Center" />
+
+            <Button Text="WRÓĆ"
+                    BackgroundColor="#2563EB"
+                    TextColor="White"
+                    Clicked="OnWrocClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
